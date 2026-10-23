@@ -1,0 +1,110 @@
+.root {
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+    -fx-background-color: linear-gradient(to bottom, #f8fafc, #e2e8f0);
+}
+
+.title { -fx-font-size: 34px; -fx-font-weight: bold; -fx-text-fill: #1f2937; }
+.subtitle { -fx-font-size: 13px; -fx-text-fill: #64748b; }
+.section-label { -fx-font-size: 13px; -fx-font-weight: bold; -fx-text-fill: #334155; }
+.hint { -fx-font-size: 11px; -fx-text-fill: #64748b; }
+
+.page-scroll { -fx-background: transparent; -fx-background-color: transparent; -fx-border-width: 0; }
+.page-scroll > .viewport { -fx-background-color: transparent; }
+
+.card {
+    -fx-background-color: white;
+    -fx-padding: 25;
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(gaussian, rgba(15,23,42,0.10), 16, 0, 0, 6);
+}
+.result-card {
+    -fx-background-color: white;
+    -fx-padding: 18;
+    -fx-background-radius: 16;
+    -fx-effect: dropshadow(gaussian, rgba(15,23,42,0.06), 8, 0, 0, 3);
+}
+.ref { -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #b45309; }
+.preview-text { -fx-font-size: 13px; -fx-text-fill: #334155; }
+.feedback { -fx-font-size: 12px; -fx-text-fill: #b91c1c; -fx-background-color: #fef2f2; -fx-padding: 8 10; -fx-background-radius: 6; }
+
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 11 12;
+    -fx-font-size: 13px;
+}
+.text-field:focused { -fx-border-color: #d97706; -fx-effect: dropshadow(gaussian, rgba(217,119,6,0.12), 5, 0, 0, 0); }
+
+.btn-primary, .btn-secondary, .btn-outline, .btn-danger-outline {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-padding: 12 16;
+    -fx-cursor: hand;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+.btn-primary { -fx-background-color: #d97706; -fx-text-fill: white; }
+.btn-primary:hover { -fx-background-color: #b45309; }
+.btn-secondary { -fx-background-color: #0f172a; -fx-text-fill: white; -fx-padding: 13 18; }
+.btn-secondary:hover { -fx-background-color: #1e293b; }
+.btn-outline { -fx-background-color: #f8fafc; -fx-border-color: #cbd5e1; -fx-text-fill: #334155; }
+.btn-outline:hover { -fx-background-color: #e2e8f0; }
+.btn-danger-outline { -fx-background-color: #fff7f7; -fx-border-color: #fecaca; -fx-text-fill: #b91c1c; }
+.btn-danger-outline:hover { -fx-background-color: #fee2e2; }
+.button:disabled { -fx-opacity: 0.50; }
+
+.pill {
+    -fx-background-color: white;
+    -fx-border-color: #cbd5e1;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-padding: 7 14;
+    -fx-cursor: hand;
+}
+.pill:selected { -fx-background-color: #d97706; -fx-border-color: #d97706; -fx-text-fill: white; }
+
+.fila-versiculos { -fx-border-color: #e2e8f0; -fx-border-radius: 10; -fx-background-radius: 10; }
+.list-cell { -fx-background-color: white; -fx-padding: 9 11; -fx-font-size: 13px; }
+.list-cell:hover { -fx-background-color: #f1f5f9; }
+.list-cell:selected { -fx-background-color: #ffedd5; -fx-text-fill: #92400e; }
+
+.context-menu {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-border-color: #e2e8f0;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 12, 0, 0, 5);
+}
+.menu-item { -fx-padding: 8 12; }
+.menu-item:focused { -fx-background-color: #ffedd5; }
+
+/* Janela fullscreen: mantém o estilo independente da tela principal. */
+.slide-root { -fx-background-color: #0f172a; }
+.slide-referencia {
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #f59e0b;
+}
+.slide-texto {
+    -fx-font-size: 40px;
+    -fx-text-fill: white;
+    -fx-line-spacing: 8px;
+}
+.slide-texto-container { -fx-background-color: transparent; }
+.slide-scroll { -fx-background: #0f172a; -fx-background-color: #0f172a; -fx-border-color: transparent; }
+.slide-scroll > .viewport { -fx-background-color: #0f172a; }
+.slide-scroll .scroll-bar:vertical { -fx-pref-width: 6px; }
+.slide-rodape { -fx-padding: 8 4; }
+.slide-contador { -fx-text-fill: #cbd5e1; -fx-font-size: 14px; }
+.slide-controle, .slide-controle-sair {
+    -fx-font-size: 13px;
+    -fx-padding: 10 17;
+    -fx-background-radius: 9;
+    -fx-text-fill: white;
+    -fx-background-color: #334155;
+    -fx-cursor: hand;
+}
+.slide-controle:hover { -fx-background-color: #475569; }
+.slide-controle-sair { -fx-background-color: #7f1d1d; }
+.slide-controle-sair:hover { -fx-background-color: #991b1b; }

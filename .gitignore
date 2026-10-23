@@ -1,0 +1,7 @@
+target/
+.idea/
+db/
+*.sqlite
+src/main/resources/bible/
+.env
+*.log
